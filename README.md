@@ -21,8 +21,14 @@
 ```
 
 ## Other things
-  * please make storing log directory by `mkdir logs` before running equivalence.py
-  * please make storing model directory by `mkdir model` before running equivalence.py
+
+- please make storing log directory by `mkdir logs` before running equivalence.py
+- please make storing model directory by `mkdir model` before running equivalence.py
   
+## Authors
+
+- [Wei Ma](https://github.com/Marvinmw)
+- [Jun Lu](https://github.com/junlulocky)
+
 ## References
   
