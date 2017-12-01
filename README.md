@@ -1,6 +1,6 @@
 # Equiv-FCL-CONVL
 
-Package:
+Dependence packages:
   * numpy
   * python3
   * tensorflow
