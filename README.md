@@ -35,7 +35,7 @@ An equivalence of fully connected layer and convolutional layer.
 ## References
 
 
-  1. [hipsternet](https://github.com/wiseodd/hipsternet/blob/master/hipsternet/im2col.py)
+  1. Program [hipsternet](https://github.com/wiseodd/hipsternety)
   2. Andrea Vedaldi and Karel Lenc. Matconvnet: Convolutional neural networks for matlab. In Proceedings
      of the 23rd ACM international conference on Multimedia, pp. 689–692. ACM, 2015.
 
