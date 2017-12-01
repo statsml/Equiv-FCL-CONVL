@@ -1,5 +1,7 @@
 # Equiv-FCL-CONVL
 
+An equivalence of fully connected layer and convolutional layer.
+
 ## Dependence packages
 
 ```
