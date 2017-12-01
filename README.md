@@ -7,3 +7,9 @@ Dependence packages:
   * keras
   * panda
   * h5py
+  
+Python files:
+  * equivalence.py : train the networks, type `python equivalence.py` in the terminal
+  * cifar.py       : define the networks
+  * img2col        : converting convolutional operation to matrix multplication
+  * train          : optimization
