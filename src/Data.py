@@ -2,8 +2,6 @@ from __future__ import print_function
 import keras
 from keras.datasets import mnist
 from keras import backend as K
-from logger.BatchLosses import LossHistory
-import pandas
 
 
 def getMiniData():
@@ -35,20 +33,4 @@ def getMiniData():
     y_train = keras.utils.to_categorical(y_train, num_classes)
     y_test = keras.utils.to_categorical(y_test, num_classes)
     return (x_train, y_train), (x_test, y_test),input_shape,batch_size,num_classes,epoches
-
-
-def trainMSE(model, x_train, y_train, x_test, y_test, logpath, epoches=12, batch_size=128):
-    model.compile(loss='mean_squared_error',
-              optimizer=keras.optimizers.Adam())
-    lossbatch  = LossHistory()
-
-    history=model.fit(x_train, y_train,
-                    batch_size = batch_size,
-                    epochs=epoches,
-                    verbose=1,
-                    validation_data=(x_test,y_test),
-                    callbacks=[lossbatch])
-
-    pandas.DataFrame({'loss':lossbatch.losses,'acc':lossbatch.acc}).to_csv(logpath)
-    return model,history
 
