@@ -16,17 +16,12 @@ An equivalence of fully connected layer and convolutional layer.
 ## Python files
 
 ```
-  * equivalence.py    # train the networks, type `python equivalence.py` in the terminal
-  * cifar.py          # define the networks
+  * equivalence.py    # test the equivalence of convolutional operation and matrix multplication, type `python equivalence.py` in the terminal
+  * cifar.py          # define CNN network
   * img2col.py        # converting convolutional operation to matrix multplication
-  * train.py          # optimization
+  * Data.py           # data provider
 ```
 
-## Other things
-
-- please make storing log directory by `mkdir logs` before running equivalence.py
-- please make storing model directory by `mkdir model` before running equivalence.py
-  
 ## Authors
 
 - [Wei Ma](https://github.com/Marvinmw)
