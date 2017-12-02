@@ -45,6 +45,6 @@ for j in range(1000):
     # print(out_mapindex.shape)
     error_mappingindex = error_mappingindex + np.linalg.norm(out_mapindex.flatten()-cnnimgs.flatten())
 
-print(error_algorithm1/400)
-print(error_mappingindex/400)
+print(error_algorithm1/1000)
+print(error_mappingindex/1000)
 K.clear_session()
