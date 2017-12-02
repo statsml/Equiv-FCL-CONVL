@@ -18,7 +18,7 @@ An equivalence of fully connected layer and convolutional layer.
 ```
   * equivalence.py    # test the equivalence of convolutional operation and matrix multplication, type `python equivalence.py` in the terminal
   * cifar.py          # define CNN network
-  * img2col.py        # converting convolutional operation to matrix multplication
+  * img2col.py        # converting 4D data to 2D matrix 
   * Data.py           # data provider
 ```
 
