@@ -12,7 +12,7 @@ from functools import reduce
 
 def trainMSE(model, x_train, y_train, x_test, y_test, logpath, modelpath,historypath, epoches=12, batch_size=128 , names='cnn'):
     model.compile(loss='mean_squared_error',
-              optimizer=keras.optimizers.Adam())
+              optimizer=keras.optimizers.Adam(lr=0.01))
     lossbatch  = LossHistory()
     tensorboard = TensorBoard(log_dir='./logs/'+names, histogram_freq=0,
                               write_graph=True, write_images=False)
