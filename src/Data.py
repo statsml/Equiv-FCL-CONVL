@@ -80,9 +80,6 @@ def getMiniDataMSE():
     x_test = pad(x_test, (N, img_rows + 2, img_cols + 2, channel))
     print(x_test.shape)
 
-    # convert class vectors to binary class matrices
-    # y_train = keras.utils.to_categorical(y_train, num_classes)
-    # y_test = keras.utils.to_categorical(y_test, num_classes)
     return (x_train, y_train), (x_test, y_test),(img_rows+2, img_cols+2, channel),batch_size,num_classes,epoches
 
 def pad(X, paddedshape):

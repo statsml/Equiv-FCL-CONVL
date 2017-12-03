@@ -20,7 +20,6 @@ W1 = cnn.get_layer('conv').get_weights()[0].flatten()
 mean1 = np.mean(W1)
 s = np.std(W1)
 print('CNN weight matrix mean {}, std {}'.format(mean1, s))
-# print(cnn.get_layer('conv').output_shape)
 np.random.seed(14343)
 fcnn =  net.fcOneLayer((13 * 13, 16))
 fcnn.load_weights('./model/fcnn.h5')
@@ -42,7 +41,6 @@ outfc = fcnn_conv.predict(X_train, batch_size=100, verbose=0)
 
 difference = 0.0
 for i in range(1000):
-    # print(np.linalg.norm((outcnn[i].flatten() - outfc[i].flatten())))
     difference = difference + np.linalg.norm((outcnn[i].flatten() - outfc[i].flatten()))
 print(difference/1000.0)
 K.clear_session()
@@ -56,12 +54,4 @@ pyplot.hist(W2, bins, alpha=0.5, label='FC', color='k')
 print(np.linalg.norm((W1.flatten() - W2.flatten())))
 pyplot.legend(loc='upper right')
 pyplot.show()
-
-#SGD
-#1.84765432613e-06
-#2.12273e-7
-
-#adam
-#0.535982942939
-#0.0742322
 

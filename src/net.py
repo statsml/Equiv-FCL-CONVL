@@ -1,7 +1,3 @@
-'''
-The code is based on keras example Cifar10-CNN
-'''
-
 from __future__ import print_function
 from keras.models import Sequential
 from keras.layers import Dense, Activation, Reshape,Flatten
@@ -31,7 +27,6 @@ def cnnOneLayer(input_shape,stride,kernel_size,padding='valid',batch_size=None):
 
 def fcOneLayer(input_shape, batch_size=None):
     model = Sequential()
-    #model.add(Reshape((-1, 16),input_shape=input_shape,batch_size=batch_size,name='reshape_1'))
     model.add(Dense(128,
                     input_shape=input_shape,batch_size=batch_size,
                      kernel_initializer='he_uniform',use_bias=False, name='conv'))
