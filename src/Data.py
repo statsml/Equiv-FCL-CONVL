@@ -87,5 +87,5 @@ def getMiniDataMSE():
 
 def pad(X, paddedshape):
     result = np.zeros(paddedshape)
-    result[:,1:29,1:29,:] = X
+    result[:, 1:29, 1:29, :] = X
     return result

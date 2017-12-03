@@ -2,10 +2,15 @@ from __future__ import print_function
 
 import keras.backend as K
 import numpy as np
-
 import im2col as conveter
 import net
 import train as tr
+
+import os
+if not os.path.exists('./logs'):
+    os.mkdir('./logs')
+if not os.path.exists('./model'):
+        os.mkdir('./model')
 
 (x_train, y_train),(x_test, y_test),input_shape, batch_size, num_classes, epoches =  Data.getMiniData()
 (x_train, y_train),(x_test, y_test) = (x_train[:1000,:,:,:], y_train[0:1000]),(x_test[0:1000,:,:,:], y_test[0:1000])

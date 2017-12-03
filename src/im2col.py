@@ -15,7 +15,7 @@ def im2col(input, kernel_shape, stride, outshape):
     _,h2,w2,ch2 = outshape
     batch,h1,w1,ch1 = input.shape
     padding = stride*(h2-1)+kh-h1
-    plefttop = int((padding-1)/2)
+    plefttop = int((padding-1)/2) if padding >0 else 0
     prightbot = padding-plefttop
     padedinput = np.lib.pad(input, ((0, 0), (plefttop, prightbot), (plefttop, prightbot), (0, 0)), 'constant',
                       constant_values=((0, 0), (0, 0), (0, 0), (0, 0)))
