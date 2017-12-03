@@ -12,9 +12,9 @@ import numpy as np
 (x_train, y_train),(x_test, y_test) = (x_train[:1000,:,:,:], y_train[0:1000]),(x_test[0:1000,:,:,:], y_test[0:1000])
 np.random.seed(14343)
 cnn = net.cnnOneLayer(input_shape, 2, (4, 4))
-# W1_cnn =  cnn.get_layer('conv').get_weights()[0]
-# print(W1_cnn.shape)
-# W2_cnn =  cnn.get_layer('dense').get_weights()[0]
+W1_cnn =  cnn.get_layer('conv').get_weights()[0]
+print(W1_cnn.shape)
+W2_cnn =  cnn.get_layer('dense').get_weights()[0]
 # print(W2_cnn.shape)
 #print(cnn.get_layer('conv').output_shape)
 # print(cnn.get_layer('act2').output_shape)
@@ -27,11 +27,11 @@ fcnn =  net.fcOneLayer((13 * 13, 16))
 
 print(fcnn.get_layer('conv').get_weights()[0].shape)
 print(fcnn.get_layer('dense').get_weights()[0].shape)
-# w1new = np.reshape(W1_cnn,(-1, 128))
+w1new = np.reshape(W1_cnn,(-1, 128))
 
 # print(w1new.shape)
-# fcnn.get_layer('conv').set_weights((w1new,))
-# fcnn.get_layer('dense').set_weights((W2_cnn,))
+fcnn.get_layer('conv').set_weights((w1new,))
+fcnn.get_layer('dense').set_weights((W2_cnn,))
 # print(fcnn.get_layer('conv').output_shape)
 # print(fcnn.get_layer('act2').output_shape)
 
