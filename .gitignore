@@ -1,5 +1,5 @@
 .DS_Store
 .idea/*
 *.pyc
-logs/*
-model/*
+src/logs/*
+src/model/*
