@@ -1,15 +1,7 @@
 # Equiv-FCL-CONVL
 
 An equivalence of fully connected layer and convolutional layer.
-<<<<<<< HEAD
 
-=======
-Before running the program, please execute:
-```
- * 'mkdir src/logs'
- * 'mkdir src/model'
-```
->>>>>>> 1044d31bb886ef93b270e71ceef6f43c260adccf
 ## Dependence packages
 
 ```
