@@ -11,7 +11,7 @@ import Data
 (x_train, y_train),(x_test, y_test) = (x_train[1001:2001,:,:,:], y_train[1001:2001]),(x_test[1001:2001,:,:,:], y_test[1001:2001]),
 np.random.seed(14343)
 cnn = net.cnnOneLayer(input_shape, 2, (4, 4))
-cnn.load_weights('./model/sgdmodel/cnn.h5')
+cnn.load_weights('./model/cnn.h5')
 cnn_conv = Model(inputs=cnn.input,
                                  outputs=cnn.get_layer('conv').output)
 outcnn = cnn_conv.predict(x_train,batch_size=100,verbose=0)
@@ -23,7 +23,7 @@ print('CNN weight matrix mean {}, std {}'.format(mean1, s))
 # print(cnn.get_layer('conv').output_shape)
 np.random.seed(14343)
 fcnn =  net.fcOneLayer((13 * 13, 16))
-fcnn.load_weights('./model/sgdmodel/fcnn.h5')
+fcnn.load_weights('./model/fcnn.h5')
 fcnn_conv = Model(inputs=fcnn.input,
                                  outputs=fcnn.get_layer('conv').output)
 
