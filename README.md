@@ -19,6 +19,7 @@ An equivalence of fully connected layer and convolutional layer.
 
 Test the equivalence of convolutional operation and matrix multplication, type `python equivalence.py` in the terminal
 
+Type `python trainnetworks.py` to train the CNN and FC network to see the equivalence of the CONV layer and FC layer.
 ```
   * equivalence.py          # test the equivalence of convolutional operation and matrix multplication, type `python equivalence.py` in the terminal
   * net.py                  # define CNN network
@@ -37,7 +38,6 @@ Test the equivalence of convolutional operation and matrix multplication, type `
 - [Jun Lu](https://github.com/junlulocky)
 
 ## References
-
 
   1. Program [hipsternet](https://github.com/wiseodd/hipsternety)
   2. Andrea Vedaldi and Karel Lenc. Matconvnet: Convolutional neural networks for matlab. In Proceedings
