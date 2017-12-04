@@ -17,21 +17,22 @@ An equivalence of fully connected layer and convolutional layer.
   
 ## Python files
 
-Test the equivalence of convolutional operation and matrix multplication, type `python equivalence.py` in the terminal
-
-Type `python trainnetworks.py` to train the CNN and FC network to see the equivalence of the CONV layer and FC layer.
 ```
-  * equivalence.py          # test the equivalence of convolutional operation and matrix multplication, type `python equivalence.py` in the terminal
-  * net.py                  # define CNN network
-  * img2col.py              # converting 4D data to 2D matrix
-  * Data.py                 # data provider
   * trainnetworks.py        # train CNN and FC network
   * visiualNet.py           # plot the architecture of the networks
   * computeFnorm.py         # compute F-norm of the outputs of the CONV layer and the dense layers, plot historams of the wights and filters
+  * net.py                  # define CNN network
+  * img2col.py              # converting 4D data to 2D matrix
+  * Data.py                 # data provider
   * plotcsv.plotHistory     # plot the training and validation loss
   * logger.BachLosses.py    # record the loss of every batch
 ```
-
+### Runing programs
+```
+    * train the two network `python3 trainnetworks.py`. The log file and model are stored in the directory logs and model.
+    * visiualize the two network `python3 visualNet.py`. The reulsts are stored in the logs directory.
+    * compare the two well-tuned network, `python3 computeFnorm.py`.
+```
 ## Authors
 
 - [Wei Ma](https://github.com/Marvinmw)
