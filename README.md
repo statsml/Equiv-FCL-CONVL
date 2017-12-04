@@ -21,7 +21,7 @@ An equivalence of fully connected layer and convolutional layer.
   * trainnetworks.py        # train CNN and FC network
   * visiualNet.py           # plot the architecture of the networks
   * computeFnorm.py         # compute F-norm of the outputs of the CONV layer and the dense layers, plot historams of the wights and filters
-  * net.py                  # define CNN network
+  * net.py                  # define CNN and FC network
   * img2col.py              # converting 4D data to 2D matrix
   * Data.py                 # data provider
   * plotcsv.plotHistory     # plot the training and validation loss
