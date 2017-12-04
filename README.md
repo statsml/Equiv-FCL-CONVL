@@ -17,7 +17,7 @@ An equivalence of fully connected layer and convolutional layer.
   
 ## Python files
 
-```
+```python
   * trainnetworks.py        # train CNN and FC network.
   * visiualNet.py           # plot the architecture of the networks.
   * computeFnorm.py         # compare the two well tuned networks, plot historams of the weights and filters.
@@ -28,12 +28,12 @@ An equivalence of fully connected layer and convolutional layer.
   * logger.BachLosses.py    # record the loss of every batch druing training.
 ```
 ## Running programs
-```
-    * train the two networks `python3 trainnetworks.py`. The log file and model are stored in the directory logs and model.
-    * visiualize the two networks `python3 visualNet.py`. The reulsts are stored in the logs directory.
-    * compare the two well-tuned networks, `python3 computeFnorm.py`.
-    * visualize the losses of the two networks, `python3 plotHistory.py`.
-```
+
+- train the two networks `python3 trainnetworks.py`. The log file and model are stored in the directory logs and model.
+- visiualize the two networks `python3 visualNet.py`. The reulsts are stored in the logs directory.
+- compare the two well-tuned networks, `python3 computeFnorm.py`.
+- visualize the losses of the two networks, `python3 plotHistory.py`.
+
 ## Authors
 
 - [Wei Ma](https://github.com/Marvinmw)
