@@ -18,20 +18,21 @@ An equivalence of fully connected layer and convolutional layer.
 ## Python files
 
 ```
-  * trainnetworks.py        # train CNN and FC network
-  * visiualNet.py           # plot the architecture of the networks
-  * computeFnorm.py         # compare the two well tuned networks, plot historams of the weights and filters
-  * net.py                  # define CNN and FC network
-  * img2col.py              # converting 4D data to 2D matrix
-  * Data.py                 # data provider
-  * plotcsv.plotHistory     # plot the training and validation loss
-  * logger.BachLosses.py    # record the loss of every batch
+  * trainnetworks.py        # train CNN and FC network.
+  * visiualNet.py           # plot the architecture of the networks.
+  * computeFnorm.py         # compare the two well tuned networks, plot historams of the weights and filters.
+  * net.py                  # define CNN and FC network.
+  * img2col.py              # converting 4D data to 2D matrix.
+  * Data.py                 # data provider.
+  * plotcsv.plotHistory.py  # plot the training and validation loss.
+  * logger.BachLosses.py    # record the loss of every batch druing training.
 ```
 ## Running programs
 ```
-    * train the two network `python3 trainnetworks.py`. The log file and model are stored in the directory logs and model.
-    * visiualize the two network `python3 visualNet.py`. The reulsts are stored in the logs directory.
-    * compare the two well-tuned network, `python3 computeFnorm.py`.
+    * train the two networks `python3 trainnetworks.py`. The log file and model are stored in the directory logs and model.
+    * visiualize the two networks `python3 visualNet.py`. The reulsts are stored in the logs directory.
+    * compare the two well-tuned networks, `python3 computeFnorm.py`.
+    * visualize the losses of the two networks, `python3 plotHistory.py`.
 ```
 ## Authors
 
