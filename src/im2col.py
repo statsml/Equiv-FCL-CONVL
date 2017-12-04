@@ -1,5 +1,7 @@
 import numpy as np
-
+'''
+The file is implemented according to Algorithm 1 in the paper and also gives an implementation by mapping index.
+'''
 def im2col(input, kernel_shape, stride, outshape):
     '''
     :param input: it is of the shape (batch, height, width, channels)

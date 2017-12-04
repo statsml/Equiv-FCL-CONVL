@@ -1,5 +1,9 @@
 import keras
 class LossHistory(keras.callbacks.Callback):
+    '''
+    The class will store the loss for every batch during training.
+    The using way is the same with the corresponding logger in Keras.
+    '''
     def on_train_begin(self, logs={}):
         self.losses = []
         self.acc = []

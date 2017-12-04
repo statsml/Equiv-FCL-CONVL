@@ -2,9 +2,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.ticker import MaxNLocator
-import matplotlib
-from scipy.signal import savgol_filter
 def readData(file_lists, data_keys):
+    '''
+    read data from a list of files according keys.
+    :param file_lists:
+    :param data_keys:
+    :return: dictionary storing the data
+    '''
     data = {}
     for k in file_lists.keys():
         file_data = pd.read_csv(file_lists[k])
@@ -12,7 +16,17 @@ def readData(file_lists, data_keys):
     return data
 
 
-def plot(data,key,title,ylabel,xlabel,savepath,max_itr=1000,wisize=9):
+def plot(data,key,title,ylabel,xlabel,savepath):
+    '''
+    visiual the data
+    :param data:
+    :param key:
+    :param title:
+    :param ylabel:
+    :param xlabel:
+    :param savepath:
+    :return:
+    '''
     plt.figure()
     for k in data.keys():
          y=data[k][key][:]
@@ -34,7 +48,6 @@ def plot(data,key,title,ylabel,xlabel,savepath,max_itr=1000,wisize=9):
     plt.gca().grid(True)
     for name in suffix:
         plt.savefig(savepath+name)
-    #plt.ylim(0.5, 1)
 
     plt.show(block=False)
 

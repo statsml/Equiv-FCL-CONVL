@@ -1,6 +1,7 @@
 from src.plotcsv import  plot_fn as pfn
 import   matplotlib.pyplot as plt
 from os.path import dirname, abspath
+#plot the history files returned by Keras's fit methods
 d = dirname(dirname(abspath(__file__)))
 data_keys = ['loss','val_loss']
 root = d+'/logs/adam/logs/'

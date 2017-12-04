@@ -3,7 +3,9 @@ import keras
 from keras.callbacks import TensorBoard
 from logger.BatchLosses import LossHistory
 import pandas
-
+'''
+The file define the optimization method of the two network.
+'''
 
 def trainMSE(model, x_train, y_train, x_test, y_test, logpath, modelpath,historypath, epoches=12, batch_size=128 , names='cnn'):
     model.compile(loss='mean_squared_error',

@@ -5,7 +5,9 @@ import numpy as np
 from keras.utils import plot_model
 import src.Data as Data
 import src.net as net
-
+'''
+the file can draw the structure of the neural network
+'''
 (x_train, y_train),(x_test, y_test),input_shape, batch_size, num_classes, epoches =  Data.getMiniData()
 np.random.seed(14343)
 cnn = net.cnnOneLayer(input_shape, 2, (4, 4), batch_size=128)
