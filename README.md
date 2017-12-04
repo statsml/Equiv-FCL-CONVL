@@ -27,7 +27,7 @@ An equivalence of fully connected layer and convolutional layer.
   * plotcsv.plotHistory     # plot the training and validation loss
   * logger.BachLosses.py    # record the loss of every batch
 ```
-### Runing programs
+## Running programs
 ```
     * train the two network `python3 trainnetworks.py`. The log file and model are stored in the directory logs and model.
     * visiualize the two network `python3 visualNet.py`. The reulsts are stored in the logs directory.
