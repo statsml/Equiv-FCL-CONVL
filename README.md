@@ -39,6 +39,17 @@ An equivalence of fully connected layer and convolutional layer.
 - [Wei Ma](https://github.com/Marvinmw)
 - [Jun Lu](https://github.com/junlulocky)
 
+Cite out technical report if it is useful to your research:
+
+```
+@misc{1712.01252,
+  author = {Wei Ma and Jun Lu},
+  title = {{A}n {E}quivalence of {F}ully {C}onnected {L}ayer and {C}onvolutional {L}ayer},
+  year = {2017},
+  eprint = {1712.01252}
+}
+```
+
 ## References
 
   1. Program [hipsternet](https://github.com/wiseodd/hipsternety)
